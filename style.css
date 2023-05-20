@@ -23,7 +23,7 @@ section{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(wave.png);
+    background: url(imgs/wave.png);
     background-size: 1000px 100px;
     animation: animate 4s ease-in-out infinite ;
     animation-delay: calc(var(--i)*0.25s);
