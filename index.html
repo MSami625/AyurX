@@ -25,7 +25,7 @@
         <div class="wave" id="wave4" ></div> 
         
         <div class="main_text" id="text_main">
-            <h1  id="text_main">I'm a </h1>
+            <h1  id="text_main">I'm a <span class="multitext"></span> </h1>
         </div>
 
     </section>
@@ -40,5 +40,15 @@
         </p>
     </div>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".multitext",{
+            strings: ["Doctor", "Patient"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+    
+        })
+    </script>
 </body>
 </html>

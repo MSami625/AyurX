@@ -5,6 +5,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
+
 }
 /* ====== Wave animation ======== */
 section{
@@ -15,7 +16,7 @@ section{
     background-color: #0093E9;
     background-image: linear-gradient(180deg, #0093E9 30%, #80D0C7 100%);
 
-   
+   overflow: hidden;
 }
 .wave{
     position: absolute;
@@ -93,6 +94,7 @@ section{
     display: block;
     animation: animate 4s ease-in-out infinite ;
     cursor: pointer;
+    border: none;
 }
 
 .SOS_btn:hover {
@@ -113,25 +115,30 @@ section{
     opacity: 0.5;
 }
 .main_text{
-    width: 700px;
+    width: 800px;
     height: 500px;
     position: relative;
     display: flex;
     align-items: center;
+    
 
     
     
     
 }
 #text_main{
-    margin-left: 3.7rem;
-    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
     position: absolute;
     font-size: 6rem;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0,0,0, .2);
     animation: animate 4s ease-in-out infinite ;
 
+}
+.multitext{
+    color: rgb(70, 70, 70);
+    text-transform: capitalize;
 }
 
          
