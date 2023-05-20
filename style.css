@@ -199,7 +199,9 @@ footer{
     
     position: relative;
     width: 100%;
-    background: #3586ff;
+    /*background: #3586ff;*/
+    background-color: #3586ff;
+    background-image: linear-gradient(180deg, #3586ff 50%, #80D0C7 110%);
     height: 200px;
     padding: 20px 50px;
     display:flex;
