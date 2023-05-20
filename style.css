@@ -141,7 +141,59 @@ section{
     color: rgb(70, 70, 70);
     text-transform: capitalize;
 }
-
+.main_btn{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+.doc_btn {
+    background-color: #fff;
+    font-size: 25px;
+    padding: 10px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(70, 70, 70);;            
+    border-radius: 10px;
+    display: block;
+    animation: animate 4s ease-in-out infinite ;
+    cursor: pointer;
+    border: none;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+.doc_btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+    text-decoration: none;
+    
+    
+}
+.pat_btn{
+    background-color: rgb(70, 70, 70);
+    font-size: 25px;
+    padding: 10px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+    animation: animate 4s ease-in-out infinite ;
+    cursor: pointer;
+    border: none;
+    margin-left: 3rem;
+    font-weight: 600;
+}
+.pat_btn:hover {
+    background-position: right center;
+    color:rgb(70, 70, 70);
+    background-color: #fff;
+    text-decoration: none;
+    
+    
+}
          
 
  
