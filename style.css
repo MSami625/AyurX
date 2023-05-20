@@ -194,3 +194,112 @@ section{
     
     
 }
+/* ====== footer section ======== */
+footer{
+    
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    height: 200px;
+    padding: 20px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+footer .social_icon , 
+footer .menu{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    animation: animate 4s ease-in-out infinite ;
+}
+footer .social_icon li,
+footer .menu li{
+    list-style: none;
+}
+footer .social_icon li a {
+    font-size: 2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.2s;
+
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+    color:rgb(70, 70, 70);
+}
+footer .menu li a {
+    font-size: 1.2em;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.2s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 500;
+}
+footer .menu li a:hover{
+    opacity: 1;
+    color:rgb(70, 70, 70);
+}
+footer .fwave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(imgs/fwave.png);
+    background-size: 1000px 100px;
+
+}
+footer .fwave#fwave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+}
+footer .fwave#fwave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave_02 4s linear infinite;
+}
+footer .fwave#fwave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animatewave 3s linear infinite;
+}
+footer .fwave#fwave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 3s linear infinite;
+}
+@keyframes animatewave {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+@keyframes animatewave_02 {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+footer p{
+    margin-top: 1rem;
+    color: white;
+    animation: animate 4s ease-in-out infinite ;
+}
