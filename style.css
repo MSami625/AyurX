@@ -113,7 +113,7 @@ section{
     height: auto;
     width: 650px;
     animation: animate 4s ease-in-out infinite ;
-    opacity: 0.5;
+    opacity:1;
 }
 .main_text{
     width: 800px;
