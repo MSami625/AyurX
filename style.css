@@ -11,8 +11,11 @@ section{
     position: relative;
     width: 100%;
     height: 90vh;
-    background-color: #3586ff;
     
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 30%, #80D0C7 100%);
+
+   
 }
 .wave{
     position: absolute;
@@ -89,6 +92,7 @@ section{
     border-radius: 10px;
     display: block;
     animation: animate 4s ease-in-out infinite ;
+    cursor: pointer;
 }
 
 .SOS_btn:hover {
@@ -97,6 +101,7 @@ section{
     text-decoration: none;
     
 }
+
 .back_img{
     position: absolute;
     right: 0;
@@ -107,8 +112,28 @@ section{
     animation: animate 4s ease-in-out infinite ;
     opacity: 0.5;
 }
- 
-/* ====== logo and sos button end ======== */
+.main_text{
+    width: 700px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    
+    
+    
+}
+#text_main{
+    margin-left: 3.7rem;
+    margin-top: 5rem;
+    position: absolute;
+    font-size: 6rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0, .2);
+    animation: animate 4s ease-in-out infinite ;
+
+}
+
          
 
  
