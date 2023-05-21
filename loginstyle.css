@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 
 *{
     margin: 0;
@@ -28,26 +33,94 @@ body{
     margin-top: 20px;
     position: absolute;
     
-    background-image: linear-gradient(180deg, #c8e6f7 30%, #a8f1e9 100%);
+    background-image: linear-gradient(180deg, #bcddf0 30%, #a8f1e9 100%);
     border-radius:20px ;
     animation: animate 4s ease-in-out infinite ;
     
+}
+.form_box p {
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    padding:10px 0px;
+    color: rgb(150, 148, 148);
+}
+.form_box p  a {
+    text-decoration: none;
+    color:#1FAB89;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: none;
+}
+#form{
+    padding-top: 20px;
+    margin-top: 30px;
+    
+}
+#form label {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 10px 0px;
+    color: #999c9a;
+}
+#form input {
+    border:none;
+    border-bottom:3px solid #1FAB89;
+    width: 350px;
+    margin: 10px 0px;
+    outline: none;
+    font-size: 1rem;
+    padding: 5px 0px;  
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+#btn1{
+    margin-bottom: 12px;
+    text-align: center;
+    padding:10px 60px ;
+    position: relative;
+    left: 80px;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.2s;
+
+}
+#btn1:hover {
+    background-position: right center;
+    color:rgb(70, 70, 70);
+    background-color: #fff;
+    text-decoration: none;
+    transform: translateY(-3px);
+    
+    
+}
+.other{
+    padding:10px 0px;
 }
 
 .logoimg{
     position:absolute;
     height: auto;
-    top: 0;
-    width: 200px;
+    top: 20px;
+    width: 80px;
     
 }
 .namelogoimg{
     position:absolute;
     height: auto;
-    top: 0;
-    margin-top: 15px;
+    top: 75px;
+    margin-top: 20px;
 
-    width: 200px;
+    width: 120px;
 }
 .item{
     position: absolute;
@@ -66,8 +139,7 @@ body{
     position: relative;
     height: 510px;
     width: 515px;
-    background-color: #0093E9;
-    background-image: linear-gradient(180deg, #0093E9 30%, #80D0C7 120%);
+    background-color: transparent;
     border-radius: 20px;
     object-fit: cover;
     
@@ -84,7 +156,6 @@ body{
 }
 .form_box{
     margin-top: 40px;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +169,7 @@ body{
     
     height: 25px;
     width: 70%;
-    border-bottom: 2px solid #888;
+    border-bottom: 2px solid #242323;
     position: relative;
     margin: 20px 0;
     cursor: pointer;
@@ -132,28 +203,6 @@ body{
 
 }
          
-.btn_reg{
-    background-color: rgb(70, 70, 70);
-    font-size: 25px;
-    padding: 10px 100px;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;            
-    border-radius: 10px;
-    display: block;
-    cursor: pointer;
-    border: none;
-    font-weight: 600;
-}
-.btn_reg:hover {
-    background-position: right center;
-    color:rgb(70, 70, 70);
-    background-color: #fff;
-    text-decoration: none;
-    
-    
-}
 .term{
     margin-right: 10rem;
     margin-bottom: 10px;
@@ -215,4 +264,27 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.social_icon {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
 
+    
+}
+.social_icon li{
+    list-style: none;
+}
+.social_icon li a {
+    font-size: 2em;
+    margin: 0 20px;
+    display: inline-block;
+    transition: 0.2s;
+
+}
+.social_icon li a:hover{
+    transform: translateY(-5px);
+    color:rgb(70, 70, 70);
+}
