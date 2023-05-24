@@ -146,6 +146,20 @@ body {
     font-size: 18px;
     font-family: 'Comfortaa', cursive;
 }
+#form p {
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1rem;
+    padding:10px 0px;
+    color: rgb(150, 148, 148);
+}
+#form  p  a {
+    text-decoration: none;
+    color:#1FAB89;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: none;
+}
 .other{
     padding:10px 0px;
 }

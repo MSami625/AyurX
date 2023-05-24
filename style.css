@@ -33,11 +33,13 @@ section{
     z-index: 1000;
     opacity: 1;
     background-position-x: 400px;
+    animation: animatewave 15s linear infinite;
 }
 .wave#wave2{
     z-index: 999;
     opacity: 0.5;
     background-position-x: 300px;
+    animation: animatewave_02 15s linear infinite;
 }
 .wave#wave3{
     z-index: 998;
@@ -264,25 +266,25 @@ footer .fwave#fwave1{
     z-index: 1000;
     opacity: 1;
     bottom: 0;
-    animation: animatewave 4s linear infinite;
+    animation: animatewave 12s linear infinite;
 }
 footer .fwave#fwave2{
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
-    animation: animatewave_02 4s linear infinite;
+    animation: animatewave_02 12s linear infinite;
 }
 footer .fwave#fwave3{
     z-index: 1000;
     opacity: 0.2;
     bottom: 15px;
-    animation: animatewave 3s linear infinite;
+    animation: animatewave 10s linear infinite;
 }
 footer .fwave#fwave4{
     z-index: 999;
     opacity: 0.7;
     bottom: 20px;
-    animation: animatewave_02 3s linear infinite;
+    animation: animatewave_02 10s linear infinite;
 }
 @keyframes animatewave {
     0%{
