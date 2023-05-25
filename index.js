@@ -22,6 +22,35 @@ window.addEventListener('scroll',function(){
 
 })
 
+
+
+//geolocation 
+
+function getLocationAndSetState() {
+  let state = document.getElementById("location");
+  navigator.geolocation.getCurrentPosition(position => {
+    const { latitude, longitude } = position.coords;
+    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        state.innerHTML += data.address.state;
+      })
+      .catch(() => {
+        console.log("Error in retrieving data from API, Check Permissions!!!");
+      });
+  });
+}
+
+
+getLocationAndSetState();
+
+
+
+
+
+
+//buggy
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
   
@@ -42,4 +71,5 @@ var swiper = new Swiper(".mySwiper", {
   },
       
 });
+
 
